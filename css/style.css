@@ -1,16 +1,26 @@
 * {
     padding: 0;
     margin: 0;
+
+    font-family: sans-serif;
 }
 
 body {
     display: flex;
+    flex-direction: column;
 }
 
 header {
     display: flex;
     width: 50vw;
     flex-direction: column;
+    padding: 1em 25vw 0 25vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
     padding: 1em 25vw 0 25vw;
 }
 
@@ -21,8 +31,54 @@ header {
 #search {
     width: 100%;
     font-size: 200%;
-    font-family: sans-serif;
     caret-color: cornflowerblue;
     border: none;
     outline: none;
+}
+
+.item {
+    display: flex;
+    border: thin solid lightgray;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.item .type {
+    padding: 0.5rem;
+    border: none;
+    display: block;
+    color: white;
+    text-align: right;
+    width: 6rem;
+    flex: 0 0 auto;
+}
+
+.item .slides {
+    background-color: darkred;
+}
+
+.item .resource {
+    background-color: green;
+}
+
+.item .demo {
+    background-color: darkorange;
+}
+
+.item .info {
+    background-color: cornflowerblue;
+}
+
+.item a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    flex: 0 1 auto;
+}
+
+.item a:hover {
+    background-color: yellow;
 }
