@@ -20,4 +20,9 @@ header {
 
 #search {
     width: 100%;
+    font-size: 200%;
+    font-family: sans-serif;
+    caret-color: cornflowerblue;
+    border: none;
+    outline: none;
 }
